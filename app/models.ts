@@ -1,3 +1,4 @@
+"use client";
 import jsonData from "../bankdata.json";
 
 export interface BankEntry {

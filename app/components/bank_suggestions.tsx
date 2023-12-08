@@ -36,7 +36,7 @@ const BankSuggestions = (props: BankSuggestionsProps) => {
                   {bank.rank}. {bank.title} - {bank.leverandor_tekst}
                 </Typography>
                 <Typography variant="body1" sx={{ mb: 1 }}>
-                  Interest Rate: {bank.rentesats1}%
+                  Rente: {bank.rentesats1}%
                 </Typography>
                 <Typography variant="body2">{bank.description}</Typography>
               </Box>
