@@ -13,7 +13,6 @@ const client = new OpenAI({
   dangerouslyAllowBrowser: true,
 });
 
-
 export default function SavingsAccount() {
   const [isLoading, setIsLoading] = useState(false);
   const [bankSuggestions, setBankSuggestions] = useState<BankEntry[]>([]);
@@ -76,7 +75,6 @@ export default function SavingsAccount() {
             .content[0] as OpenAI.Beta.Threads.Messages.MessageContentText;
 
           const contentTextValue = content.text.value;
-          console.log(contentTextValue);
           cleanResponse(contentTextValue);
         }
       } else {
@@ -84,7 +82,7 @@ export default function SavingsAccount() {
       }
     }
 
-    await getRunStatus(thread.id, run.id);
+    getRunStatus(thread.id, run.id);
   };
 
   function cleanResponse(response: string) {
@@ -109,7 +107,6 @@ export default function SavingsAccount() {
       setIsLoading(false);
     } catch (error) {
       setIsLoading(false);
-      console.error("Error parsing JSON:", error);
     }
   }
 

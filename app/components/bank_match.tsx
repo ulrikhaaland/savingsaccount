@@ -74,10 +74,6 @@ const BankMatch = (props: BankMatchProps) => {
 
     // Call the onSearch callback with the userData state
     onSearch(userData);
-    // Handle the form submission here
-    // You can process the userData state to match with bank accounts
-    console.log("Submitted data:", userData);
-    // Implement your logic or API call here
   };
 
   return (
