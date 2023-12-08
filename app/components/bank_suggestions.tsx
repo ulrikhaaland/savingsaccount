@@ -22,7 +22,7 @@ const BankSuggestions = (props: BankSuggestionsProps) => {
         Tilbake
       </Button>
       <Typography variant="h4" sx={{ textAlign: "center", mb: 3 }}>
-        Ranked Bank Options
+        De Beste bankene for deg
       </Typography>
       <Paper elevation={3} sx={{ padding: 2 }}>
         <List>
